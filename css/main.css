@@ -137,6 +137,10 @@ h1, h2, h3, h4, h5, h6 {
     float: none;
     width: 100%;
 }
+.mix img{
+    width: 200px;
+    height: 150px;
+}
 .center-pills {
     display: inline-block;
 }
