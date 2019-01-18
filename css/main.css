@@ -137,22 +137,22 @@ h1, h2, h3, h4, h5, h6 {
     float: none;
     width: 100%;
 }
-.mix img{
+.pentagon img{
     width: 200px;
     height: 150px;
 }
 .center-pills {
     display: inline-block;
 }
-#grid .mix {
-    width: 200px;
-    height: 150px;
-    vertical-align: top;
+#grid .pentagon {
+    /* width: 200px;
+    height: 150px; */
+    /* vertical-align: top; */
     margin: 20px 20px 20px 0;
     color: #fff;
     text-align: center;
 }
-#grid .mix .thumbnail {
+#grid .pentagon .thumbnail {
     border: 2px thin #F7F7F7;
     padding: 0;
     border-radius: 0;
