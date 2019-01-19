@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     /* Scroll hire me button to contact page */
-    $('.hire-me').click(function() {
+    $('.hire-me').click(function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
         }, 500);
@@ -11,14 +11,14 @@ $(document).ready(function() {
 
     /* For Bootstrap current state on portfolio sorting */
 
-    $('ul.nav-pills li a').click(function(e) {
+    $('ul.nav-pills li a').click(function (e) {
         $('ul.nav-pills li.active').removeClass('active')
         $(this).parent('li').addClass('active')
     })
 
     /* portfolio mixitup */
 
-    $(window).load(function() {
+    $(window).load(function () {
         var $container = $('.grid-wrapper');
         $container.isotope({
             filter: '*',
@@ -29,7 +29,7 @@ $(document).ready(function() {
             }
         });
 
-        $('.grid-controls li a').click(function() {
+        $('.grid-controls li a').click(function () {
             $('.grid-controls .current').removeClass('current');
             $(this).addClass('current');
 
@@ -47,14 +47,14 @@ $(document).ready(function() {
     });
 
 
-    /* Magnific Popup */
-    $('.grid-wrapper').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
+    // /* Magnific Popup */
+    // $('.grid-wrapper').magnificPopup({
+    //     delegate: 'a',
+    //     type: 'image',
+    //     gallery: {
+    //         enabled: true
+    //     }
+    // });
 
 
 
@@ -76,19 +76,19 @@ $(document).ready(function() {
 
     /* Charts*/
 
-    $('.chart').waypoint(function() {
+    $('.chart').waypoint(function () {
         $(this).easyPieChart({
             barColor: '#3498db',
             size: '150',
             easing: 'easeOutBounce',
-            onStep: function(from, to, percent) {
+            onStep: function (from, to, percent) {
                 $(this.el).find('.percent').text(Math.round(percent));
             }
         });
     }, {
-        triggerOnce: true,
-        offset: 'bottom-in-view'
-    });
+            triggerOnce: true,
+            offset: 'bottom-in-view'
+        });
 
 
     /* VEGAS Home Slider */
@@ -113,10 +113,10 @@ $(document).ready(function() {
     })('overlay', {
         src: 'img/overlays/16.png'
     });
-    $("#vegas-next").click(function() {
+    $("#vegas-next").click(function () {
         $.vegas('next');
     });
-    $("#vegas-prev").click(function() {
+    $("#vegas-prev").click(function () {
         $.vegas('previous');
     });
 
