@@ -16,9 +16,7 @@ $(document).ready(function () {
         $(this).parent('li').addClass('active')
     })
     //logic for top menu
-    $("#page-skills").click(function (e) {
-        $("html, body"). 
-    })
+
     // onClick="document.getElementById('middle').scrollIntoView();" />
     /* portfolio mixitup */
 
